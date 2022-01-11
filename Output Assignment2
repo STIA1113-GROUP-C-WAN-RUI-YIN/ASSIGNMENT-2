@@ -23,17 +23,13 @@ daily goal. Besides, you will have an idea about the duration you still need to 
 stay away from health problems such as high blood pressure, obesity and atherosclerosis. 
 
 Are you interested in our TS-1 ?
-Please enter 1 for updating pogram. Please enter 2 for other service.
+Please enter 1 for updating pogram.
 1
 Updating .... Please wait
 
 Update suceeded. You are directed to the trial now.
 Please enter any integer to continue.
 1
-
-Updating .... Please wait
-
-Update suceeded. You are directed to the trial now.
 
 Dear user, what is your name? 
 wan
@@ -62,7 +58,7 @@ You are maintain weight. You should have 1419.30 kcal/day.
 Recommended goal : more than 283.86 kcal/day.
 Hi wan, please enter your goal to burn calories today. 
 300
-Please enter the distance traveled today in metres.
+Please enter the distance travelled today in metres.
 200
 Please enter the time you have exercised today in minutes.
 10
@@ -95,26 +91,29 @@ Discount for member: 20%, Discount for non-member: 5%
 The membership costs RM 10 and it is for lifetime.
 The final price that you need to pay will be RM 128 only as our member.
 However, for non-member, you will need to pay RM 142.50.
-Please enter 1 to register for our member.
+Please enter 1 to register for our member and 2 if not to become a member.
 1
 
 You have recieved discount at  20.0 %.
 Your discount price will be at RM  32.00. 
 Your final price will be at    RM 128.00. 
 
-Besides, you will have 1-year warranty for your program. 
+Besides, you will have 12-month warranty for your program. 
 Your warranty code will be TS-100098.
 
 Please enter any integer to continue.
 1
 
 Do you want to pay by cash or by card? Please enter 1 for cash and 2 for card.
-1
+2
+Please enter your numerical password. 
+12345
+Please re-enter your password.
+12345
+Correct password. 
 The final price you should pay is RM 128.00. 
-Please enter the amount you want to pay.
-165
-The price you paid is RM165.00. 
-Thank you. This is your change RM 37.00. 
+RM 128.0 ENTERED.
+THANK YOU.
 
 Here's a voucher for you.
   ======================================  
@@ -154,14 +153,15 @@ Discount rate, %:             20.00
 Discount price  :         RM  32.00
 Final price     :         RM 128.00
 ____________________________________
-Amount paid     :         RM 165.00
-Change          :         RM   37.00
+Amount paid     :         RM 128.00
+Change          :         RM   0.00
 
 
 
 ************************************
-WARRANTY CODE :          TS100098
+WARRANTY CODE :          TS-100098
 ************************************
               Thank You!
           Please come again!
 ************************************
+
