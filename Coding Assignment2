@@ -46,11 +46,6 @@ public class WatchesAssignment2 {
 		System.out.println("Are you interested in our TS-1 ?");
 		System.out.println("Please enter 1 for updating pogram. Please enter 2 for other service.");
 	    service = scan.nextInt();
-		while(service == 2) {
-			System.out.println("TS is still trying hard to provide better service. See you next time");
-			System.out.println("Please enter 1 for updating pogram. ");
-		    service = scan.nextInt();
-		}
 	    System.out.println("Updating .... Please wait");
 		System.out.println();
 		System.out.println("Update suceeded. You are directed to the trial now.");
@@ -151,7 +146,7 @@ public class WatchesAssignment2 {
 		System.out.println(name + ", please re-enter your goal to burn calories today.");
 		goal = scan.nextDouble();
 	}
-	System.out.println("Please enter the distance traveled today in metres.");
+	System.out.println("Please enter the distance travelled today in metres.");
 	double x = scan.nextDouble();
 	System.out.println("Please enter the time you have exercised today in minutes.");
 	double y = scan.nextDouble();
@@ -213,9 +208,9 @@ public class WatchesAssignment2 {
 	double cash        = 0;
 	double change      = 0;
 	int member;
-	price = 160*0.8;
-	discount = 160*0.2;
-	discountRate =20.00;
+	int warranty = 0;
+	String warrantyCode = null;
+	
 	System.out.println("The fees for updating the pogram is RM 150.");
 	System.out.println("Today is our Grand Opening and you are one of our first 100 customers!");
 	System.out.println("Hence, we will have some promotion.");
@@ -224,11 +219,21 @@ public class WatchesAssignment2 {
 	System.out.println("The membership costs RM 10 and it is for lifetime.");
 	System.out.println("The final price that you need to pay will be RM 128 only as our member.");
 	System.out.println("However, for non-member, you will need to pay RM 142.50.");
-	System.out.println("Please enter 1 to register for our member.");
+	System.out.println("Please enter 1 to register for our member and 2 if not to become a member.");
 	member = scan.nextInt();
-	while(member != 1) {
-	System.out.println("Please enter 1 to register for our member.");
-	member = scan.nextInt();
+	if(member == 1) {
+	price = 160*0.8;
+	discount = 160*0.2;
+	discountRate =20.00;
+	warranty = 12;
+	warrantyCode = "TS-100098";
+	}
+	else if(member == 2) {
+		price = 150*0.95;
+		discount = 150*0.05;
+		discountRate =5.00;
+		warranty = 6;
+		warrantyCode = "TS-100097";
 	}
 	//PRINTING OF PRICE
 	System.out.println();
@@ -240,8 +245,8 @@ public class WatchesAssignment2 {
 	System.out.printf("%.2f",price);	
 	System.out.println(". " );		
 	System.out.println();
-	System.out.println("Besides, you will have 1-year warranty for your program. " );	
-	System.out.println("Your warranty code will be TS-100098." );	
+	System.out.println("Besides, you will have "+ warranty +"-month warranty for your program. " );	
+	System.out.println("Your warranty code will be " + warrantyCode +"." );	
 	System.out.println();
 	System.out.println("Please enter any integer to continue.");
 	proceed = scan.nextInt();
@@ -251,7 +256,7 @@ public class WatchesAssignment2 {
 	int pay;
 	System.out.println("Do you want to pay by cash or by card? Please enter 1 for cash and 2 for card.");
 	pay = scan.nextInt();
-	while(pay!=1) {
+	if(pay==2) {
 		int password, password1;
 		int k;
 		System.out.println("Please enter your numerical password. ");
@@ -285,7 +290,7 @@ public class WatchesAssignment2 {
 			
 		}
 		
-		break;	}
+		}
 	if(pay==1) {
 		System.out.print("The final price you should pay is RM " );	
 		System.out.printf("%.2f",price);	
@@ -369,7 +374,7 @@ public class WatchesAssignment2 {
 	System.out.println();
 	System.out.println();
 	System.out.println("************************************");
-	System.out.println("WARRANTY CODE :          TS100098");
+	System.out.println("WARRANTY CODE :          " + warrantyCode);
 	System.out.println("************************************");
 	System.out.println("              Thank You!");
 	System.out.println("          Please come again!");
