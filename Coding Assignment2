@@ -44,7 +44,7 @@ public class WatchesAssignment2 {
 				            + "obesity and atherosclerosis. ");
 		System.out.println();
 		System.out.println("Are you interested in our TS-1 ?");
-		System.out.println("Please enter 1 for updating pogram. Please enter 2 for other service.");
+		System.out.println("Please enter 1 for updating pogram.");
 	    service = scan.nextInt();
 	    System.out.println("Updating .... Please wait");
 		System.out.println();
@@ -53,12 +53,6 @@ public class WatchesAssignment2 {
 		proceed = scan.nextInt();
 		System.out.println();
 		
-		System.out.println("Updating .... Please wait");
-		System.out.println();
-		System.out.println("Update suceeded. You are directed to the trial now.");
-		System.out.println();
-		
-	
 	
 		/*  Nowadays, technology is more advanced and we have now smart watches.  
 		We can use smart watches to track our fitness while doing sports. 
